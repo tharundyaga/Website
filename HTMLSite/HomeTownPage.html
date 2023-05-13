@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Home Town</title>
+        <link rel="stylesheet" href="../CSSSite/index.css">
+        <link rel="stylesheet" href="../CSSSite/nav.css">
+        <link rel="stylesheet" href="../CSSSite/button.css">
+		<link rel="stylesheet" href="../CSSSite/accordion.css">
+    </head>
+    <body style="background-image: url(../CSSSite/images/about-bg.jpeg);">   
+		<section class="container">
+			<div class="sidebar">
+			   					
+					<ul>
+						<li><a class="active" href="./HomePage.html">Home</a></li>
+						<li><a href="./HobbyPage.html">Hobby</a></li>
+						<li><a href="./HomeTownPage.html">Home Town</a></li>
+						<li><a href="./AboutPage.html">About</a></li>
+					  </ul>					
+				
+			</div>
+            <div class="p10">
+                <h2 class="m0 align-center">Welcome to home town</h2>
+            </div>
+            <br/><br/>
+            <div class="align-center">
+                <div id="section1" data-expanded="+"  class="accordion-content">
+                    <h4 onclick="onClickAccordion('section1')">Section 1</h4>
+					
+                    <p>
+						<span><img src="../CSSSite/images/image1.jpg" height="200"></span>
+						<span>
+							Alternatively, you can use the opacity property to make the entire element, including its content, partially transparent. However, note that this property affects the entire element and its contents, not just the background color:
+						</span>
+                        </p>
+                </div>
+                <div id="section2" data-expanded="+" class="accordion-content">
+                    <h4 onclick="onClickAccordion('section2')">Section 2</h4>
+                    <p><span><img src="../CSSSite/images/image2.jpg" height="200"></span>
+						<span>
+                        Test Case For Webpage Design Elements: Suppose you have to take the printout of a web page while working on a project. Sometimes the whole content on the page will not be printed as the contents at the end of the margin are cut off, or the images are not displayed properly.
+                    </span>
+                        </p>
+                </div>
+                <div id="section3" data-expanded="+" class="accordion-content">
+                    <h4 onclick="onClickAccordion('section3')">Section 3</h4>
+                    <p><span><img src="../CSSSite/images/image3.jpg" height="200"></span>
+						<span>
+                        Alignment issues and padding issues may also appear on print pages. So the user should be careful while taking a web page printout.
+                    </span>
+                        </p>
+                </div>               
+            </div>
+        </section>
+		<script src="../JSSite/accordion.js"></script>
+    </body>
+</html>

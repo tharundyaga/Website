@@ -1,0 +1,101 @@
+
+* {
+    font-family: sans-serif;
+}
+/* html, body{ 
+    position:fixed; 
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right:0; 
+}  */
+
+body {
+    margin: 0px;
+}
+
+h2 {
+	color: black;
+}
+
+section {
+    flex: 1;
+	/* background-image: url('./images/bg1.jpg'); */
+    background-size: cover;
+
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.col-10 {
+    width: 100%;
+    float: left;
+} 
+
+.align-center {
+    text-align: center;
+	padding-left: 250px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.m0 {
+    margin: 0px;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.section-content {
+    width: 70%;
+    height: 520px;
+    left: 20%;
+    position: relative;
+    background-color: white;
+    opacity: 0.7;
+    display: none;
+}
+
+.hobby-content {
+    width: 80%;
+    height: 300px;
+    left: 10%;
+    position: relative;
+    background-color: white;
+    opacity: 0.7;
+    padding: 15px;
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+/* button{
+    display: block;
+} */
+.btn {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0000FF;
+    border: none;
+    color: white;
+}

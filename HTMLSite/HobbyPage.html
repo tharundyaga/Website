@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Hobby</title>
+        <link rel="stylesheet" href="../CSSSite/index.css">
+        <link rel="stylesheet" href="../CSSSite/nav.css">
+        <link rel="stylesheet" href="../CSSSite/button.css">        
+        <link rel="stylesheet" href="../CSSSite/form.css">
+        <link rel="stylesheet" href="../CSSSite/table.css">
+    </head>
+    <body style="background-image: url(../CSSSite/images/about-bg.jpeg);">
+        <section class="container">
+			<div class="sidebar">
+                
+                    <div class="toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>				
+					<ul>
+						<li><a class="active" href="./HomePage.html">Home</a></li>
+						<li><a href="./HobbyPage.html">Hobby</a></li>
+						<li><a href="./HomeTownPage.html">Home Town</a></li>
+						<li><a href="./AboutPage.html">About</a></li>
+					  </ul>					
+				
+			</div>
+            <div class="p10">
+                <h2 class="m0 align-center">Hobby Page</h2>
+            </div>
+            <br/><br/>
+
+            <div class="align-center">
+                <div id="addSection"  class="hobby-content">
+                    <form>
+                        <div class="control-group">
+                            <label>First Name</label>
+                            <input type="text" id="firstName" class="form-control" required />
+                        </div>
+						<div class="error-msg" id="fname-error-msg"></div>
+                        <div class="control-group">
+                            <label>Last Name</label>
+                            <input type="text" id="lastName" class="form-control" required />
+                        </div>
+						<div class="error-msg" id="lname-error-msg"></div>
+                        <div class="control-group">
+                            <label>Hobby</label>
+                            <input type="text" id="hobby" class="form-control" required />
+                        </div>
+						<div class="error-msg" id="hobby-error-msg"></div>
+                        <br/>
+                        <div class="col-10">
+                            <button class="btn" onclick="onClickCancel()">Cancel</button>
+                            <button class="btn success" onclick="onClickSave()">Save</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                 
+                <br/>
+                
+                <div id="gridSection" class="hobby-content display-block">
+                    <div class="col-10 align-right">
+                        <button class="btn success" onclick="onClickAdd()">Add</button>
+                    </div>
+                    <br/>
+                    <table id="grid">
+                        <thead>
+                            <th>
+                                First Name
+                            </th>
+                            <th>
+                                Last Name
+                            </th>
+                            <th>
+                                Hobby
+                            </th>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>John</td>
+                                <td>Dere</td>
+                                <td>Playing Sports</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+        <script src="../JSSite/crud.js"></script>
+    </body>
+</html>
